@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        
+        <!--<h1>condional Statements</h1>
+        {% if a > 100 %}
+            <h2>I am in if block </h2>
+            <h2>{{a}}</h2>
+        {% endif %}
+            <h1>if-else</h1>
+            {% if a > b %}
+                <h2>inside if block</h2>
+                <h2>{{a}}</h2>
+            {% else %}
+                <h2>I am in else block</h2>
+                <h2>{{b}}</h2>
+            {% endif %}
+
+            <h1>if-elif-else</h1>
+            {% if a > b and a > c %}
+                <h2>i am in if block</h2>
+                <h2>{{a}}</h2>
+            {% elif b > c %}
+                <h2>inside elif block</h2>
+                <h2>{{b}}</h2>
+            {% else %}
+                <h2>inside else block</h2>
+                <h2>{{c}}</h2>
+            {% endif %}-->
+
+            <h1>nested if blocks</h1>
+                {% if a > b %}
+                        {% if  a > c %}
+                            <h1>a is maximum</h1>
+                        {% else %}
+                            <h1>c is maximum</h1>
+                        {% endif %}
+                {% else %}
+                    {% if  b > c %}
+                        <h1>b is maximum</h1>
+                    {% else %}
+                        <h1>c is maximum</h1>
+                    {% endif %}
+                {% endif %}
+    </center>
+</body>
+</html>
